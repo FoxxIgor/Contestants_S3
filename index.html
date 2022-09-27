@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"> 
+        <title> New Contestants </title>
+    </head>
+    <body>
+        <center>
+            <h1> Contestants S3 </h1>
+            <img src="" id="ok">
+            <div id="name"></div>
+            <button onclick="Proxim()"> Proxim </button>
+        
+            <script>
+                var contestants = ["Naily","Mustard","Liam","Amelia","Tomato"];
+                var img = ["OwenS2.webp","Mustard.webp","Liam.jpg","Amelia.webp","Tomato.png"];
+                var i = -1;
+                function Proxim(){
+                    
+                    i++;
+                    var array = 4;
+
+                    if(i>array){
+                        i=0;
+                    };
+                    
+                    document.getElementById("name").innerHTML=contestants[i];
+                    document.getElementById("ok").src=img[i];
+                };
+            </script>
+        </center>
+    </body>
+</html>
